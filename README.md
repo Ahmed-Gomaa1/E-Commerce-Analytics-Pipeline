@@ -32,6 +32,37 @@ processed/
 └── category_hierarchy/   # Recursive tree of category_id paths
 ```
 
+
+### Data Model (ER Diagram)
+
+                     +-----------------------+
+                     |   item_properties     |
+                     +-----------------------+
+                     | item_id               |
+                     | timestamp             |
+                     | property              |
+                     | value                 |
+                     +-----------------------+
+                              ↑
+                              |
+                     +-----------------------+
+                     |     Events            |
+                     +-----------------------+
+                     | timestamp             |
+                     | visitor_id            |
+                     | item_id               |
+                     | event_type            |
+                     | transaction_id        |
+                     +-----------------------+
+                              ↓
+                     +-----------------------+
+                     |   Category_tree       |
+                     +-----------------------+
+                     | category_id           |
+                     | parentid              |
+                     +-----------------------+
+
+
 ---
 
 ## 🧪 ETL Job (AWS Glue Script)
