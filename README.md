@@ -1,4 +1,4 @@
-# E-Commerce Analytics Pipeline with AWS Glue, Athena, and S3
+# E-Commerce Unified Analytics Pipeline with AWS
 
 ## 📌 Project Overview
 
