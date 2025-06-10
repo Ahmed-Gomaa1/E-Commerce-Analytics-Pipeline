@@ -1,0 +1,1 @@
+FAILED: SemanticException [Error 10035]: Column repeated in partitioning columns
